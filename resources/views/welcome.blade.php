@@ -92,9 +92,15 @@
 
                                         <div class="pt-3 sm:pt-5 lg:pt-0">
                                             <h2 class="text-xl font-semibold text-black dark:text-white">Teste</h2>
-
-                                            <p class="mt-4 text-sm/relaxed">
-                                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
+                                            <button class="btn">Button</button>
+<button class="btn btn-neutral">Neutral</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-accent">Accent</button>
+<button class="btn btn-ghost">Ghost</button>
+<button class="btn btn-link">Link</button>
+                                            <p class="mt-4 text-sm/relaxed bg-red-500">
+                                                sla mano faz a aula ai
                                             </p>
                                         </div>
                                     </div>
