@@ -51,7 +51,7 @@
       </ul>
     </div>
   </div>
-  <div class="navbar-center hidden lg:flex">
+  <div class="navbar-center hidden lg:flex z-40">
     <ul class="menu menu-horizontal px-1">
     <!-- Versão PC -->
       <li>
