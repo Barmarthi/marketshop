@@ -1,5 +1,6 @@
 <x-layout_base>
 <!-- Hero -->
+<div class="absolute"><img src="https://assets.propmark.com.br/uploads/2022/06/01--1-.png" alt=""></div>
 <div class="relative bg-gradient-to-b from-yellow-500 via--500 to-white-500">
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 
@@ -11,23 +12,18 @@
         <!-- Blockquote -->
         <blockquote class="hidden md:block relative max-w-sm borde= m-auto rounded-lg">
           
-
-<article class="card">
+        <!-- End Blockquote -->
+      </div>
+      <!-- End Col -->
+      <article class="card">
   <span class="top"></span>
   <span class="right"></span>
   <span class="bottom"></span>
   <span class="left"></span>
-
-          <img class="rounded-lg" src="https://lojasardoque.com.br/cdn/shop/files/Banner_para_loja_online_frete_gratis_mercado_shops_medio_1600_x_440_px_628_x_800_px.png?v=1691675813&width=3840" alt="">
-</article>
-        </blockquote>
-        <!-- End Blockquote -->
-      </div>
-      <!-- End Col -->
-
       <div>
         <!-- Form -->
-        <form>
+        <form action="{{route('salva-usuario')}}" method="POST">
+          @csrf
           <div class="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
             <!-- Card -->
             <div class="p-4 sm:p-7 flex flex-col bg-white rounded-2xl shadow-lg bg-gradient-to-b from-black to-white">
@@ -60,7 +56,7 @@
                   <div>
                     <!-- Floating Input -->
                     <div class="relative">
-                      <input type="text" id="hs-hero-signup-form-floating-input-first-name" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
+                      <input type="text" name="nome" id="hs-hero-signup-form-floating-input-first-name" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
                       focus:pt-6
                       focus:pb-2
                       [&:not(:placeholder-shown)]:pt-6
@@ -86,7 +82,7 @@
                   <div>
                     <!-- Floating Input -->
                     <div class="relative">
-                      <input type="email" id="hs-hero-signup-form-floating-input-email" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
+                      <input type="email" name="email" id="hs-hero-signup-form-floating-input-email" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
                       focus:pt-6
                       focus:pb-2
                       [&:not(:placeholder-shown)]:pt-6
@@ -111,7 +107,7 @@
                   <div class="relative col-span-full">
                     <!-- Floating Input -->
                     <div class="relative">
-                      <input type="password" id="hs-hero-signup-form-floating-input-new-password" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
+                      <input type="password" name="senha" id="hs-hero-signup-form-floating-input-new-password" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
                       focus:pt-6
                       focus:pb-2
                       [&:not(:placeholder-shown)]:pt-6
@@ -224,7 +220,7 @@
     <!-- End Grid -->
 </div>
 <!-- End Hero -->
-
+</article>
 <style>
 
 .card {
@@ -280,8 +276,8 @@ span {
 }
 
 .right {
-  top: 0;
-  right: 0;
+  top: 10px;
+  right:65px;
   width: 10px;
   height: 0;
   background: linear-gradient(
@@ -293,7 +289,7 @@ span {
 }
 
 .left {
-  left: 0;
+  left: 65px;
   bottom: 0;
   width: 10px;
   height: 0;
