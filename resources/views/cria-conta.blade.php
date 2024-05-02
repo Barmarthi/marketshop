@@ -2,7 +2,7 @@
 <!-- Hero -->
 <div class="absolute"><img src="https://assets.propmark.com.br/uploads/2022/06/01--1-.png" alt=""></div>
 <div class="relative bg-gradient-to-b from-yellow-500 via--500 to-white-500">
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div class="max-w-[100rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
 
 
 
@@ -15,11 +15,7 @@
         <!-- End Blockquote -->
       </div>
       <!-- End Col -->
-      <article class="card">
-  <span class="top"></span>
-  <span class="right"></span>
-  <span class="bottom"></span>
-  <span class="left"></span>
+      
       <div>
         <!-- Form -->
         <form action="{{route('salva-usuario')}}" method="POST">
@@ -222,165 +218,5 @@
 <!-- End Hero -->
 </article>
 <style>
-
-.card {
-  position: relative;
-  color: #fff;
-  background: transparent;
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 49, 49, 0.5);
-  border-right: 1px solid rgba(0, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(57, 255, 20, 0.5);
-  border-left: 1px solid rgba(255, 255, 113, 0.5);
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  
-}
-
-p {
-  font-size: 0.95rem;
-  text-align: center;
-}
-
-span {
-  position: absolute;
-  border-radius: 100vmax;
-}
-
-.top {
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 10px;
-  background: linear-gradient(
-    90deg,
-    transparent 50%,
-    rgba(255, 49, 49, 0.5),
-    rgb(255, 49, 49)
-  );
-}
-
-.bottom {
-  right: 0;
-  bottom: 0;
-  height: 10px;
-  background: linear-gradient(
-    90deg,
-    rgb(57, 255, 20),
-    rgba(57, 255, 20, 0.5),
-    transparent 50%
-  );
-}
-
-.right {
-  top: 10px;
-  right:65px;
-  width: 10px;
-  height: 0;
-  background: linear-gradient(
-    180deg,
-    transparent 30%,
-    rgba(0, 255, 255, 0.5),
-    rgb(0, 255, 255)
-  );
-}
-
-.left {
-  left: 65px;
-  bottom: 0;
-  width: 10px;
-  height: 0;
-  background: linear-gradient(
-    180deg,
-    rgb(255, 255, 113),
-    rgba(255, 255, 113, 0.5),
-    transparent 70%
-  );
-}
-
-.top {
-  animation: animateTop 3s ease-in-out infinite;
-}
-
-.bottom {
-  animation: animateBottom 3s ease-in-out infinite;
-}
-
-.right {
-  animation: animateRight 3s ease-in-out infinite;
-}
-
-.left {
-  animation: animateLeft 3s ease-in-out infinite;
-}
-
-@keyframes animateTop {
-  25% {
-    width: 100%;
-    opacity: 1;
-  }
-
-  30%,
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes animateBottom {
-  0%,
-  50% {
-    opacity: 0;
-    width: 0;
-  }
-
-  75% {
-    opacity: 1;
-    width: 100%;
-  }
-
-  76%,
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes animateRight {
-  0%,
-  25% {
-    opacity: 0;
-    height: 0;
-  }
-
-  50% {
-    opacity: 1;
-    height: 100%;
-  }
-
-  55%,
-  100% {
-    height: 100%;
-    opacity: 0;
-  }
-}
-
-@keyframes animateLeft {
-  0%,
-  75% {
-    opacity: 0;
-    bottom: 0;
-    height: 0;
-  }
-
-  100% {
-    opacity: 1;
-    height: 100%;
-  }
-}
-
-
-
 
 </x-layout_base>
