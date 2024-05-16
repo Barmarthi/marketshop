@@ -7,7 +7,7 @@
 
 
     <!-- Grid -->
-    <div class="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
+    <div class="grid items-center md:grid-cols-2 gap-8 lg:gap-12 my-6">
       <div>
         <!-- Blockquote -->
         <blockquote class="hidden md:block relative max-w-sm borde= m-auto rounded-lg">
@@ -22,19 +22,19 @@
           @csrf
           <div class="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
             <!-- Card -->
-            <div class="p-4 sm:p-7 flex flex-col bg-white rounded-2xl shadow-lg bg-gradient-to-b from-black to-white">
+            <div class="p-4 sm:p-7 flex flex-col rounded-2xl shadow-lg bg-gradient-to-b from-pink-600 to-white">
               <div class="text-center">
                 <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Crie uma conta</h1>
-                <p class="mt-2 text-sm text-gray-600 dark:text-neutral-400">
+                <p class="mt-2 text-sm text-gray-600 dark:text-white">
                   Já tem uma conta?
-                  <a class="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">
+                  <a class="text-blue-600 decoration-2 hover:underline font-medium dark:text-black" href="#">
                     Entre aqui
                   </a>
                 </p>
               </div>
 
               <div class="mt-5">
-                <button type="button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                <button type="button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:border-gray-100 dark:text-black dark:hover:bg-pink-300">
                   <svg class="w-4 h-auto" width="46" height="47" viewBox="0 0 46 47" fill="none">
                     <path d="M46 24.0287C46 22.09 45.8533 20.68 45.5013 19.2112H23.4694V27.9356H36.4069C36.1429 30.1094 34.7347 33.37 31.5957 35.5731L31.5663 35.8669L38.5191 41.2719L38.9885 41.3306C43.4477 37.2181 46 31.1669 46 24.0287Z" fill="#4285F4"></path>
                     <path d="M23.4694 47C29.8061 47 35.1161 44.9144 39.0179 41.3012L31.625 35.5437C29.6301 36.9244 26.9898 37.8937 23.4987 37.8937C17.2793 37.8937 12.0281 33.7812 10.1505 28.1412L9.88649 28.1706L2.61097 33.7812L2.52296 34.0456C6.36608 41.7125 14.287 47 23.4694 47Z" fill="#34A853"></path>
@@ -44,7 +44,7 @@
                   Entrar com o Google
                 </button>
 
-                <div class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-neutral-500 dark:before:border-neutral-700 dark:after:border-neutral-700">Or</div>
+                <div class="py-3 flex items-center text-xs text-gray-400 uppercase before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:before:border-white dark:after:border-white">Or</div>
 
                 <!-- Grid -->
                 <div class="grid grid-cols-2 gap-4">
@@ -52,14 +52,14 @@
                   <div>
                     <!-- Floating Input -->
                     <div class="relative">
-                      <input type="text" name="nome" id="hs-hero-signup-form-floating-input-first-name" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
+                      <input type="text" name="nome" id="hs-hero-signup-form-floating-input-first-name" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:border-neutral-700 dark:text-pink-300 dark:focus:ring-neutral-600
                       focus:pt-6
                       focus:pb-2
                       [&:not(:placeholder-shown)]:pt-6
                       [&:not(:placeholder-shown)]:pb-2
                       autofill:pt-6
                       autofill:pb-2" placeholder="John">
-                      <label for="hs-hero-signup-form-floating-input-first-name" class="absolute top-0 start-0 p-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                      <label for="hs-hero-signup-form-floating-input-first-name" class="absolute top-0 start-0 p-4 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent origin-[0_0] dark:text-black peer-disabled:opacity-50 peer-disabled:pointer-events-none
                         peer-focus:scale-90
                         peer-focus:translate-x-0.5
                         peer-focus:-translate-y-1.5
@@ -78,7 +78,7 @@
                   <div>
                     <!-- Floating Input -->
                     <div class="relative">
-                      <input type="email" name="email" id="hs-hero-signup-form-floating-input-email" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
+                      <input type="email" name="email" id="hs-hero-signup-form-floating-input-email" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
                       focus:pt-6
                       focus:pb-2
                       [&:not(:placeholder-shown)]:pt-6
@@ -93,7 +93,7 @@
                         peer-[:not(:placeholder-shown)]:scale-90
                         peer-[:not(:placeholder-shown)]:translate-x-0.5
                         peer-[:not(:placeholder-shown)]:-translate-y-1.5
-                        peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-neutral-500">Email</label>
+                        peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-black">Email</label>
                     </div>
                     <!-- End Floating Input -->
                   </div>
@@ -103,7 +103,7 @@
                   <div class="relative col-span-full">
                     <!-- Floating Input -->
                     <div class="relative">
-                      <input type="password" name="senha" id="hs-hero-signup-form-floating-input-new-password" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
+                      <input type="password" name="senha" id="hs-hero-signup-form-floating-input-new-password" class="peer p-4 block w-full border-gray-200 rounded-lg text-sm placeholder:text-transparent focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:border-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600
                       focus:pt-6
                       focus:pb-2
                       [&:not(:placeholder-shown)]:pt-6
@@ -118,7 +118,7 @@
                         peer-[:not(:placeholder-shown)]:scale-90
                         peer-[:not(:placeholder-shown)]:translate-x-0.5
                         peer-[:not(:placeholder-shown)]:-translate-y-1.5
-                        peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-neutral-500">Senha</label>
+                        peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-black">Senha</label>
                     </div>
                     <!-- End Floating Input -->
 
@@ -196,7 +196,7 @@
                     <input id="remember-me" name="remember-me" type="checkbox" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 dark:bg-neutral-900 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
                   </div>
                   <div class="ms-3">
-                    <label for="remember-me" class="text-sm dark:text-white">I accept the <a class="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">Terms and Conditions</a></label>
+                    <label for="remember-me" class="text-sm dark:text-white">I accept the <a class="text-blue-600 decoration-2 hover:underline font-medium dark:text-black" href="#">Terms and Conditions</a></label>
                   </div>
                 </div>
                 <!-- End Checkbox -->
