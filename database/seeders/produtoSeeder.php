@@ -42,7 +42,7 @@ class produtoSeeder extends Seeder
                     [
                         'name'=> 'Jaqueta De Couro Legítimo David Beckham Motoqueiro Novo',
                         'descricao'=>'A Jaqueta de Couro David é a personificação do estilo urbano com um toque inigualável de versatilidade casual.',
-                        'valor'=> 1.005,
+                        'valor'=> 1000,
                         'foto'=> 'https://http2.mlstatic.com/D_NQ_NP_2X_620684-MLB52500870530_112022-F.webp',
                         'user_id'=> 1,
 

@@ -65,10 +65,10 @@
 <div class="card bg-base-100 shadow-xl">
   <figure><img class="aspect-square w-full object-cover" src="{{$produto->foto}}" alt="Shoes" /></figure>
   <div class="card-body">
-    <h2 class="card-title">{{$produto->nome}}</h2>
+    <h2 class="card-title">{{$produto->name}}</h2>
     <p>{{$produto->descricao}}</p>
     <div class="card-actions justify-between">
-      <div class="font-bold text-lg ">R${{$produto->valor}}</div>
+      <div class="font-bold text-lg ">R${{number_format($produto->valor, 2, ',', '.')}}</div>
       <button class="btn btn-primary">Compre já</button>
     </div>
   </div>
