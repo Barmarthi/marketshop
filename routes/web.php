@@ -28,14 +28,15 @@ Route::post('/salva-usuario',function(Request $request){
     $usuario ->email = $request->email;
     $usuario ->password = $request->senha;
     $usuario->save();
-    dd("Salvo com Sucesso!!");
+    // dd("Salvo com Sucesso!!");
+
+    return redirect('/login');
 
 })->name('salva-usuario');
 
 
 // ------------------------ Produtos
-Route::view('/cadastra-produto','cadastra-produto');
-
+Route::view('/cadastra-produto','cadastra-produto')->middleware('auth');
 
 Route::post('/salva-produto',function(Request $request){
     //dd($request);
@@ -54,6 +55,36 @@ Route::post('/salva-produto',function(Request $request){
     $produto->user_id = 1;
 
     $produto->save();
-    dd("Salvo com Sucesso!!");
+    // dd("Salvo com Sucesso!!");
+    return redirect ('/');
 
-})->name('salva-produto');
+})->name('salva-produto')->middleware('auth');
+
+
+//---------------------- LOGIN
+//tela login
+Route::view('/login','login')->name("login");
+Route::post('/logar',function(Request $request){
+    //dd($request);
+
+    $credentials = $request->validate([
+        'email' => ['required', 'email'],
+        'senha' => ['required'], 
+        
+]);
+
+If (Auth::attempt(['email' => $request->email, 'password' => $request->senha])) {
+    $request->session()->regenerate();
+    return redirect()->intended('/cadastra-produto');
+}
+else{
+    dd("Usuário ou senha incorretos");
+}
+})->name('logar');
+
+
+Route::get('/sair', function () {
+    Auth::logout();
+    return redirect('/');
+});
+

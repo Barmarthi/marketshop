@@ -1,12 +1,13 @@
 <x-layout_base>
     <div class="relative bg-[url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5236376f-305d-42da-8e2d-48455360a090/de12wow-49b408f7-487d-425b-89fd-1d0a31b78d28.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyMzYzNzZmLTMwNWQtNDJkYS04ZTJkLTQ4NDU1MzYwYTA5MFwvZGUxMndvdy00OWI0MDhmNy00ODdkLTQyNWItODlmZC0xZDBhMzFiNzhkMjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MaE4jfg5A2gymwpQftFJ8R7dvmnhs1dI2Apocu3nzqs')] bg-no-repeat bg-cover">
+    <div class="relative bg-gradient-to-b from-pink-500 via--300 to black">
 <!-- Card Section -->
 <div class="max-w-4xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     
   <form method="POST" action ="{{route('salva-produto')}}" enctype="multipart/form-data">
     @csrf
     <!-- Card -->
-    <div class="bg-gradient-to-b from-pink-600 to-white rounded-xl ">
+    <div class="bg-gradient-to-b from-pink-600 to-white rounded-xl border">
       <div class="relative bg-[url('https://preline.co/assets/svg/examples/abstract-bg-1.svg')] bg-no-repeat bg-cover bg-center">
         <div class="absolute top-0 end-0 p-4">
           <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
